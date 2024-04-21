@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+}
+
+.header {
+  background-image: url("/images/quran.png");
+  background-color: rgb(235, 235, 235);
+  background-repeat: no-repeat;
+  background-position: center -15px;
+  background-size: 130px;
+  padding: 5px;
+  top: 0;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  height: 90px;
+}
+
+.footer {
+  font-size: 30px;
+  font-family: "Ubuntu", sans-serif;
+  background-color: rgb(235, 235, 235);
+  background-repeat: no-repeat;
+  background-position: center -15px;
+  background-size: 130px;
+  padding-bottom: 30px;
+  top: 0;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  height: 90px;
+}
+.footer-text {
+  position: relative;
+  top: 21px;
+}
+
+.title {
+  font-size: 30px;
+  position: absolute;
+  left: 55px;
+  top: 64px;
+  text-decoration: none;
+  color: rgb(87, 171, 209);
+  font-family: "Ubuntu", sans-serif;
+}
+.title:hover {
+  color: rgb(0, 0, 0);
+  transition: 1s;
+}
+
+.container {
+  white-space: nowrap;
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  padding: 50px;
+}
+
+.cards {
+  width: 360px;
+  height: 70px;
+  padding: 1vw;
+  border: 1px solid #ccc;
+  margin: 1vw;
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
+  transition: 1s;
+}
+
+.cards:hover {
+  box-shadow: 5px 5px 5px #0005;
+  transition: 0.5s;
+}
+
+.surah {
+  font-size: 10px;
+  position: relative;
+  text-align: left;
+  bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.surah-eng {
+  font-size: 20px;
+  position: relative;
+  bottom: 24px;
+  color: rgb(0, 177, 247);
+  font-family: "Ubuntu", sans-serif;
+}
+
+.surah-ara {
+  font-size: 20px;
+  text-align: right;
+  position: relative;
+  bottom: 80px;
+  color: rgb(0, 177, 247);
+}
+
+.number-container {
+  background-color: rgb(0, 177, 247);
+  display: inline;
+  padding-right: 3px;
+  position: relative;
+  bottom: 15px;
+  right: 15px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 7px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1283px) {
+  .cards {
+    width: 330px;
+  }
+}
+@media screen and (max-width: 1183px) {
+  .cards {
+    width: 300px;
+  }
+
+  .number-container {
+    position: relative;
+    bottom: 12px;
+    right: 12px;
+  }
+}
+@media screen and (max-width: 1119px) {
+  .cards {
+    width: 270px;
+  }
+}
+@media screen and (max-width: 993px) {
+  .cards {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .cards {
+    width: 240px;
+  }
+  .number-container {
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 929px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 0fr);
+  }
+  .cards {
+    width: 90vw;
+    margin: 2vh;
+    position: relative;
+    right: 50px;
+  }
+
+  .number-container {
+    bottom: 8px;
+    right: 8px;
+  }
+}
+@media screen and (max-width: 677px) {
+  .title {
+    font-size: 25px;
+    left: 1px;
+    top: 65px;
+  }
+}
+@media screen and (max-width: 635px) {
+  .number-container {
+    right: 9px;
+  }
+}
+
+@media screen and (max-width: 518px) {
+  .number-container {
+    right: 7px;
+    bottom: 6px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .number-container {
+    right: 7px;
+    bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .number-container {
+    right: 5px;
+    bottom: 5px;
+  }
+}

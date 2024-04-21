@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+}
+
+.header {
+  background-image: url("/images/quran.png");
+  background-color: rgb(235, 235, 235);
+  background-repeat: no-repeat;
+  background-position: center -15px;
+  background-size: 130px;
+  padding: 5px;
+  top: 0;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  height: 90px;
+  position: sticky;
+  z-index: 1;
+}
+
+.title {
+  font-size: 30px;
+  position: absolute;
+  left: 55px;
+  top: 64px;
+  text-decoration: none;
+  color: rgb(87, 171, 209);
+  font-family: "Ubuntu", sans-serif;
+  transition: 0.3s;
+}
+.title:hover {
+  color: rgb(0, 0, 0);
+}
+
+.sidenav-icon {
+  float: left;
+  position: relative;
+  top: 58px;
+  color: rgb(87, 171, 209);
+  transition: 0.3s;
+}
+
+.sidenav-icon:hover {
+  color: black;
+}
+.sidenav-header {
+  border-bottom: 1px solid rgb(149, 149, 153);
+  box-shadow: 1px 2px 1px #0005;
+  margin-bottom: 15px;
+}
+.sidenav-header h1 {
+  color: rgb(87, 171, 209);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  position: relative;
+  right: 15px;
+  transition: 0.3s;
+}
+
+.sidenav-header h1:hover {
+  color: black;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 15px;
+  left: 118px;
+  font-size: 36px;
+  margin-left: 50px;
+  transition: 0.3s;
+}
+.sidenav .closebtn:hover {
+  color: rgb(87, 171, 209);
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(235, 235, 235);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 5px 8px 8px 42px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+  white-space: nowrap;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 23px;
+}
+
+.sidenav-body:hover {
+  color: rgb(87, 171, 209);
+}
+
+.sidenav-number {
+  font-size: 23px;
+  position: absolute;
+  left: 10px;
+}
+
+#verses-container {
+  transition: margin-right 0.5s;
+  padding: 16px;
+  margin: 30px;
+}
+
+.arabic-title,
+.english-title {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.arabic-text {
+  text-align: right;
+  font-size: 30px;
+  margin: 100px;
+}
+
+.verse-number {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(0, 177, 247);
+  display: inline;
+  padding-right: 3px;
+  position: relative;
+  bottom: 125px;
+  right: 15px;
+  border-radius: 5px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.english-text {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.line {
+  border: 1px solid;
+}
+
+.footer {
+  font-size: 30px;
+  font-family: "Ubuntu", sans-serif;
+  background-color: rgb(235, 235, 235);
+  background-repeat: no-repeat;
+  background-position: center -15px;
+  background-size: 130px;
+  padding-bottom: 30px;
+  top: 0;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  height: 90px;
+}
+
+.footer-text {
+  position: relative;
+  top: 20px;
+}
+@media screen and (max-width: 494px) {
+  .title {
+    font-size: 22px;
+    left: 37px;
+    top: 73px;
+  }
+  .sidenav-icon {
+    bottom: 35px;
+  }
+
+  .sidenav-header h1 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+
+  .arabic-title {
+    white-space: nowrap;
+  }
+}
